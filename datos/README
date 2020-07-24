@@ -1,2 +1,20 @@
 README
 Este folder contiene los datos necesarios para replicar el analisis del documento titulado CCC, publicado en CCC.
+
+NOTAS:
+
+Los archivos necesarios para utilizar el codigo son:
+
+1. 200722COVID19MEXICO.csv.zip (descomprimir)
+  Disponible: https://www.gob.mx/salud/documentos/datos-abiertos-152127
+  Versión: 22 de julio 2020
+  
+2. proyecciones.cvs.zip (descomprimir)
+  Datos originales: Población a mitad de año y Defunciones 1950-2050
+  Disponibles: https://datos.gob.mx/busca/dataset/proyecciones-de-la-poblacion-de-mexico-y-de-las-entidades-federativas-2016-2050
+  
+3. ihme_jul22.csv
+  Datos originales: Reference_hospitalization_all_locs.csv.zip (no es necesario descomprimir)
+  Disponible: http://www.healthdata.org/covid/data-downloads 
+  Versión: 22 de julio 2020
+ 
