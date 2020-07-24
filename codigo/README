@@ -1,1 +1,8 @@
+README
+Este folder contiene el codigo necesario para replicar el analisis del documento titulado CCC, publicado en CCC.
+  Software: R Studio
+
+01_cargar_datos: Carga los archivos 200722COVID19MEXICO.csv, proyecciones.csv, ihme_jul22.csv.
+02_tablas_vida: Crea las tablas de vida por sexo para cada entidad federativa en 2020, por escenario (base, bajo, medio, alto).
+03_graficas: Prepara las gráficas dumbell por sexo.
 
