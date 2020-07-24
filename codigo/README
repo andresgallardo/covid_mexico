@@ -3,6 +3,8 @@ Este folder contiene el codigo necesario para replicar el analisis del documento
   Software: R Studio
 
 01_cargar_datos: Carga y limpia los archivos 200722COVID19MEXICO.csv, proyecciones.csv, ihme_jul22.csv para prepararlos para construir las tablas de vida.
+
 02_tablas_vida: Crea las tablas de vida por sexo para cada entidad federativa en 2020, por escenario (base, bajo, medio, alto) y extrae e0.
+
 03_graficas: Prepara las gráficas dumbell por sexo.
 
