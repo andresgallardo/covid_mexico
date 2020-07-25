@@ -20,7 +20,7 @@
   #preparar el loop para hacer la lista por estado
   estados <- unique(t$entidad)
 
-#####ESCENARIO BASE: conapo: muertes
+#####ESCENARIO BASE: conapo. variable: muertes
   #crear vectores vacios
   expf<-vector("list",length(estados))
   expm<-vector("list",length(estados))
@@ -55,7 +55,7 @@
   #hacer dataframe final
   e0_proyecciones<-cbind(exf,exm)
 
-#####ESCENARIO BAJO: covid secretaria de salud: muertes_totales
+#####ESCENARIO BAJO: covid secretaria de salud. variable: muertes_totales
   #crear vectores vacios
   excf<-vector("list",length(estados))
   excm<-vector("list",length(estados))
@@ -90,7 +90,7 @@
   #hacer dataframe final
   e0_covid<-cbind(exf,exm)
 
-#ESCENARIO MEDIO: ihme medio con la misma proporcion por edad: muertes + muertes_nov
+#ESCENARIO MEDIO: ihme medio con la misma proporcion por edad. variable: muertes + muertes_nov
   #crear vectores vacios
   exih2f<-vector("list",length(estados))
   exih2m<-vector("list",length(estados))
@@ -126,7 +126,7 @@
   #hacer dataframe final
   e0_ihme<-cbind(exf,exm)
 
-#ESCENARIO ALTO: ihme alto con la misma proporcion por edad: muertes + muertes_sup
+#ESCENARIO ALTO: ihme alto con la misma proporcion por edad. variable: muertes + muertes_sup
   #crear vectores vacios
   exihs2f<-vector("list",length(estados))
   exihs2m<-vector("list",length(estados))
