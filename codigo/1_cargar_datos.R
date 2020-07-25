@@ -1,6 +1,6 @@
 ## SCRIPT PARA CARGAR DATOS DE CONAPO Y SECRETARIA DE SALUD
 ## NOTAS: datos de poblacion y mortalidad de proyecciones de conapo y 
-##        de numero de muertes de secretaria de salud al 20 de julio
+##        de numero de muertes de secretaria de salud al 22 de julio
 ## autor: andrés gallardo
 
 # library(tidyr)
@@ -13,11 +13,11 @@
 #setwd("~/R folder") #definir working directory
 
 #PREPARAR DATAFRAME DE CASOS DE COVID EN MEXICO
-comex<-read.csv(file = "covid_mexico/datos/200722COVID19MEXICO.csv") #ultimo disponible https://www.gob.mx/salud/documentos/datos-abiertos-152127
-  # casos positivos
+comex<-read.csv(file = "covid_mexico/datos/200722COVID19MEXICO.csv") # 22 julio. mas reciente: https://www.gob.mx/salud/documentos/datos-abiertos-152127
+  #casos positivos
   comex_todos<-comex
   comex<-comex%>%filter(RESULTADO==1)
-  # muertes
+  #muertes
   comex_mu <- subset(comex, FECHA_DEF!="9999-99-99")
   comex_mu$FECHA_DEF<-as.Date(comex_mu$FECHA_DEF)
   comex_mu$EDAD[comex_mu$EDAD >= 100] <- 100
@@ -93,7 +93,7 @@ ihm<-read.csv("covid_mexico/ihme_jul22.csv") #Reference_hospitalization_all_locs
   ihme$edad=0
   ihme$entidad=ihme$entidad+1
   
-#AGREGAR PROPORCIONES A t PORQUE IHME NO TIENE DESCOMPOSICIONES POR EDAD/SEXO
+#AGREGAR PROPORCIONES A t PORQUE IHME NO DESCOMPONE POR EDAD/SEXO
 t<-t%>%group_by(entidad)%>%mutate(tot=sum(covid))
   t<-merge(ihme,t,all=TRUE)
   cols <- c("muertes_nov","muertes_sup", "muertes_inf")
