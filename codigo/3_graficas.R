@@ -5,8 +5,9 @@
 # library(ggplot2)
 # library(ggalt)
 
-#e0_mexico$nombres[e0_mexico$nombres == "Mexico"] <- "Edo. Mexico"
-##MUJERES
+e0_mexico$nombres[e0_mexico$nombres == "Mexico"] <- "Edo. Mexico" #cambiar nombre a edomex para evitar confusiones
+
+##GRAFICA MUJERES
 svg("covid_mexico/f_escenarios.svg")
 ggplot(e0_mexico, aes(y = reorder(nombres,e0_f_proyecciones),
                       x = e0_f_covid,
@@ -67,7 +68,7 @@ ggplot(e0_mexico, aes(y = reorder(nombres,e0_f_proyecciones),
             color="grey70", size=2.1, vjust=-1.05, fontface="bold")
 dev.off()
 
-##HOMBRES
+##GRAFICA HOMBRES
 svg("covid_mexico/m_escenarios.svg")
 ggplot(e0_mexico, aes(y = reorder(nombres,e0_m_proyecciones),
                       x = e0_m_covid,
