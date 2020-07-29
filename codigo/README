@@ -1,6 +1,8 @@
 README
-Este folder contiene el codigo necesario para replicar el analisis del documento titulado CCC, publicado en CCC.
-  Software: R Studio
+Este folder contiene el codigo necesario para replicar el analisis del documento titulado Efecto del covid-19 en la expectativa de vida al nacer en México, 
+publicado en https://datos.nexos.com.mx/.
+Autor: Andrés Gallardo
+Software: R Studio
 
 01_cargar_datos: Carga y limpia los archivos 200722COVID19MEXICO.csv, proyecciones.csv, ihme_jul22.csv para prepararlos para construir las tablas de vida.
 
